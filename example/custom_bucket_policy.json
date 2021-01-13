@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicSelfRead-OverRidden",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:PutObject",
+      "Resource": [
+        "arn:aws:s3:::testbucket-dsfghjkl/*",
+        "arn:aws:s3:::testbucket-dsfghjkl"
+      ],
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "117.194.98.63/32"
+        }
+      }
+    }
+  ]
+}
