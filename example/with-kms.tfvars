@@ -1,5 +1,5 @@
 aws_profile                    = "default-terraform"
-aws_region                     = "eu-east-1"
+aws_region                     = "eu-west-1"
 bucket_name                    = "testbucket-dsfghjkl"
 create_kms_key                 = true
 enable_standard_ia_transition  = true

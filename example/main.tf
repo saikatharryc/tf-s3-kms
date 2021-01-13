@@ -1,5 +1,5 @@
 module "s3" {
-  source = "../"
+  source = "git::https://github.com/saikatharryc/tf-s3-kms.git?ref=master"
 
   aws_region  = var.aws_region
   bucket_name = var.bucket_name
